@@ -6,12 +6,17 @@
   <version>1.0.0</version>
   
   <properties>
-  	<maven.compiler.source>16</maven.compiler.source>
-  	<maven.compiler.target>16</maven.compiler.target>
+  	<maven.compiler.source>21</maven.compiler.source>
+  	<maven.compiler.target>21</maven.compiler.target>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
   <repositories>
+    <repository>
+        <id>minecraft-libraries</id>
+        <name>Minecraft Libraries</name>
+        <url>https://libraries.minecraft.net</url>
+    </repository>
   	<repository>
   		<id>spigot-repo</id>
 		<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -24,7 +29,7 @@
   </repositories>
   
   <build>
-  	<finalName>${project.name} v${project.version}</finalName>
+  	<finalName>[sf]${project.name} v${project.version}</finalName>
   	<defaultGoal>clean package</defaultGoal>
   	<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
   	
@@ -40,32 +45,28 @@
   </build>
   
   <dependencies>
-	  <dependency>
-		  <groupId>org.spigotmc</groupId>
-		  <artifactId>spigot-api</artifactId>
-		  <version>1.16.5-R0.1-SNAPSHOT</version>
-		  <scope>provided</scope>
-	  </dependency>
-  	<dependency>
-  		<groupId>com.github.TheBusyBiscuit</groupId>
-  		<artifactId>CS-CoreLib</artifactId>
-  		<version>9dd4a1cf8d</version>
-  		<scope>provided</scope>
-  		<exclusions>
-  			<exclusion>
-  				<groupId>io.github.thebusybiscuit</groupId>
-  				<artifactId>cscorelib2</artifactId>
-  			</exclusion>
-  			<exclusion>
-  				<groupId>org.bstats</groupId>
-  				<artifactId>bstats-bukkit</artifactId>
-  			</exclusion>
-  		</exclusions>
-  	</dependency>
+      <dependency>
+          <groupId>io.papermc.paper</groupId>
+          <artifactId>paper-api</artifactId>
+          <version>1.21.1-R0.1-SNAPSHOT</version>
+          <scope>provided</scope>
+       </dependency>
+       <dependency>
+          <groupId>com.mojang</groupId>
+          <artifactId>brigadier</artifactId>
+          <version>1.2.9</version>
+          <scope>provided</scope>
+       </dependency>
+       <dependency>
+          <groupId>net.md-5</groupId>
+          <artifactId>bungeecord-chat</artifactId>
+          <version>1.21-R0.1</version>
+          <scope>provided</scope>
+       </dependency>
   	<dependency>
   		<groupId>com.github.SlimefunGuguProject</groupId>
   		<artifactId>Slimefun4</artifactId>
-  		<version>38953fe13a</version>
+  		<version>2025.1</version>
   		<scope>provided</scope>
   		<exclusions>
   			<exclusion>

@@ -113,7 +113,7 @@ public class ExtraItemStack {
         "", "&b闪耀着", "&b千颗太阳的光芒。",
         "&a全套装备效果：使用剑击中目标将附加虚弱效果并额外造成+5伤害"
 );
-     static final SlimefunItemStack RADIANT_CHESTPLATE_STACK = new SlimefunItemStack(
+     public static final SlimefunItemStack RADIANT_CHESTPLATE_STACK = new SlimefunItemStack(
         "RADIANT_CHESTPLATE",
         Material.DIAMOND_CHESTPLATE,
         "&6光辉胸甲（胸甲模式）",

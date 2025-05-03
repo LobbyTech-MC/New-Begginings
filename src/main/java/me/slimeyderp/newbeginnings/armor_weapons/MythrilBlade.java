@@ -55,7 +55,7 @@ public class MythrilBlade extends NonDisenchantableSlimefunItem {
                     LivingEntity livingEntity = (LivingEntity) entity;
                     if (livingEntity.getHealth() > 10) {
                         livingEntity.damage(10);
-                        livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.SLOW,
+                        livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS,
                                 200, 2));
                         livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS,
                                 200, 1));
@@ -76,28 +76,28 @@ public class MythrilBlade extends NonDisenchantableSlimefunItem {
 
     private void spawnParticles(Player p) {
         for (float y = 0; y < 5; y += 0.5) {
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(5, y, 0), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(-5, y, 0), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(0, y, 5), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(0, y, -5), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(4, y, 4), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(-4, y, -4), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(4, y, -4), 1,
                     new Particle.DustOptions(Color.LIME, 5));
-            p.getWorld().spawnParticle(Particle.REDSTONE,
+            p.getWorld().spawnParticle(Particle.DUST,
                     p.getLocation().clone().add(-4, y, 4), 1,
                     new Particle.DustOptions(Color.LIME, 5));
         }

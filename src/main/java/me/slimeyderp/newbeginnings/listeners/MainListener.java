@@ -128,7 +128,7 @@ public class MainListener implements Listener {
                         3, 3, 3, entity -> entity instanceof LivingEntity)) {
                     ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS,
                             30, 1));
-                    ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.SLOW,
+                    ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS,
                             30, 2));
                 }
             } else {
@@ -136,7 +136,7 @@ public class MainListener implements Listener {
                         3, 3, 3, entity -> entity instanceof LivingEntity)) {
                     ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS,
                             30, 1));
-                    ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.SLOW,
+                    ((LivingEntity) entity).addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS,
                             30, 2));
                 }
             }

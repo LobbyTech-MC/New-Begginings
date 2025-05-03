@@ -93,150 +93,150 @@ public class NewBeginnings extends JavaPlugin implements SlimefunAddon {
     private void enchantItems() {
 
         ItemMeta mythrilHelmet = ExtraItemStack.MYTHRIL_HELMET_STACK.getItemMeta();
-        mythrilHelmet.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilHelmet.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 5, true);
-        mythrilHelmet.addEnchant(Enchantment.PROTECTION_EXPLOSIONS, 4, true);
-        mythrilHelmet.addEnchant(Enchantment.OXYGEN, 5, true);
-        mythrilHelmet.addEnchant(Enchantment.WATER_WORKER, 1, true);
+        mythrilHelmet.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilHelmet.addEnchant(Enchantment.PROTECTION, 5, true);
+        mythrilHelmet.addEnchant(Enchantment.BLAST_PROTECTION, 4, true);
+        mythrilHelmet.addEnchant(Enchantment.RESPIRATION, 5, true);
+        mythrilHelmet.addEnchant(Enchantment.DEPTH_STRIDER, 1, true);
         mythrilHelmet.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_HELMET_STACK.setItemMeta(mythrilHelmet);
 
         ItemMeta mythrilChestplate = ExtraItemStack.MYTHRIL_CHESTPLATE_STACK.getItemMeta();
-        mythrilChestplate.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilChestplate.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 5, true);
-        mythrilChestplate.addEnchant(Enchantment.PROTECTION_FIRE, 5, true);
+        mythrilChestplate.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilChestplate.addEnchant(Enchantment.PROTECTION, 5, true);
+        mythrilChestplate.addEnchant(Enchantment.FIRE_PROTECTION, 5, true);
         mythrilChestplate.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_CHESTPLATE_STACK.setItemMeta(mythrilChestplate);
 
         ItemMeta mythrilChestplateElytra = ExtraItemStack.MYTHRIL_CHESTPLATE_ELYTRA_STACK.getItemMeta();
-        mythrilChestplateElytra.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilChestplateElytra.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 6, true);
+        mythrilChestplateElytra.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilChestplateElytra.addEnchant(Enchantment.PROTECTION, 6, true);
         mythrilChestplateElytra.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_CHESTPLATE_ELYTRA_STACK.setItemMeta(mythrilChestplateElytra);
 
         ItemMeta mythrilLeggings = ExtraItemStack.MYTHRIL_LEGGINGS_STACK.getItemMeta();
-        mythrilLeggings.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilLeggings.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 5, true);
-        mythrilLeggings.addEnchant(Enchantment.PROTECTION_PROJECTILE, 4, true);
+        mythrilLeggings.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilLeggings.addEnchant(Enchantment.PROTECTION, 5, true);
+        mythrilLeggings.addEnchant(Enchantment.PROJECTILE_PROTECTION, 4, true);
         mythrilLeggings.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_LEGGINGS_STACK.setItemMeta(mythrilLeggings);
 
         ItemMeta mythrilBoots = ExtraItemStack.MYTHRIL_BOOTS_STACK.getItemMeta();
-        mythrilBoots.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilBoots.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 5, true);
-        mythrilBoots.addEnchant(Enchantment.PROTECTION_FALL, 4, true);
+        mythrilBoots.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilBoots.addEnchant(Enchantment.PROTECTION, 5, true);
+        mythrilBoots.addEnchant(Enchantment.FEATHER_FALLING, 4, true);
         mythrilBoots.addEnchant(Enchantment.DEPTH_STRIDER, 3, true);
         mythrilBoots.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_BOOTS_STACK.setItemMeta(mythrilBoots);
 
         ItemMeta mythrilBlade = ExtraItemStack.MYTHRIL_BLADE_STACK.getItemMeta();
-        mythrilBlade.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilBlade.addEnchant(Enchantment.DAMAGE_ALL, 7, true);
-        mythrilBlade.addEnchant(Enchantment.DAMAGE_UNDEAD, 10, true);
-        mythrilBlade.addEnchant(Enchantment.DAMAGE_ARTHROPODS, 3, true);
+        mythrilBlade.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilBlade.addEnchant(Enchantment.SHARPNESS, 7, true);
+        mythrilBlade.addEnchant(Enchantment.SMITE, 10, true);
+        mythrilBlade.addEnchant(Enchantment.BANE_OF_ARTHROPODS, 3, true);
         mythrilBlade.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_BLADE_STACK.setItemMeta(mythrilBlade);
 
         ItemMeta dreamNail = ExtraItemStack.DREAM_NAIL_STACK.getItemMeta();
-        dreamNail.addEnchant(Enchantment.DURABILITY, 10, true);
-        dreamNail.addEnchant(Enchantment.DAMAGE_ALL, 15, true);
-        dreamNail.addEnchant(Enchantment.DAMAGE_UNDEAD, 15, true);
-        dreamNail.addEnchant(Enchantment.DAMAGE_ARTHROPODS, 5, true);
+        dreamNail.addEnchant(Enchantment.UNBREAKING, 10, true);
+        dreamNail.addEnchant(Enchantment.SHARPNESS, 15, true);
+        dreamNail.addEnchant(Enchantment.SMITE, 15, true);
+        dreamNail.addEnchant(Enchantment.BANE_OF_ARTHROPODS, 5, true);
         dreamNail.setUnbreakable(true);
         ExtraItemStack.DREAM_NAIL_STACK.setItemMeta(dreamNail);
 
         ItemMeta mythrilPickaxe = ExtraItemStack.MYTHRIL_PICKAXE_STACK.getItemMeta();
-        mythrilPickaxe.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilPickaxe.addEnchant(Enchantment.DIG_SPEED, 10, true);
-        mythrilPickaxe.addEnchant(Enchantment.LOOT_BONUS_BLOCKS, 5, true);
+        mythrilPickaxe.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilPickaxe.addEnchant(Enchantment.EFFICIENCY, 10, true);
+        mythrilPickaxe.addEnchant(Enchantment.LOOTING, 5, true);
         mythrilPickaxe.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_PICKAXE_STACK.setItemMeta(mythrilPickaxe);
 
         ItemMeta mythrilBow = ExtraItemStack.MYTHRIL_BOW_STACK.getItemMeta();
-        mythrilBow.addEnchant(Enchantment.ARROW_DAMAGE, 7, true);
-        mythrilBow.addEnchant(Enchantment.ARROW_INFINITE, 1, true);
-        mythrilBow.addEnchant(Enchantment.DURABILITY, 10, true);
-        mythrilBow.addEnchant(Enchantment.ARROW_FIRE, 3, true);
+        mythrilBow.addEnchant(Enchantment.POWER, 7, true);
+        mythrilBow.addEnchant(Enchantment.INFINITY, 1, true);
+        mythrilBow.addEnchant(Enchantment.UNBREAKING, 10, true);
+        mythrilBow.addEnchant(Enchantment.FLAME, 3, true);
         mythrilBow.setUnbreakable(true);
         ExtraItemStack.MYTHRIL_BOW_STACK.setItemMeta(mythrilBow);
 
         ItemMeta infiniteFirework = ExtraItemStack.INFINITE_FIREWORK_STACK.getItemMeta();
-        infiniteFirework.addEnchant(Enchantment.ARROW_INFINITE, 1, true);
+        infiniteFirework.addEnchant(Enchantment.INFINITY, 1, true);
         ExtraItemStack.INFINITE_FIREWORK_STACK.setItemMeta(infiniteFirework);
 
         ItemMeta radiantHelmet = ExtraItemStack.RADIANT_HELMET_STACK.getItemMeta();
-        radiantHelmet.addEnchant(Enchantment.DURABILITY, 10, true);
-        radiantHelmet.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        radiantHelmet.addEnchant(Enchantment.PROTECTION_EXPLOSIONS, 10, true);
-        radiantHelmet.addEnchant(Enchantment.OXYGEN, 10, true);
-        radiantHelmet.addEnchant(Enchantment.WATER_WORKER, 1, true);
+        radiantHelmet.addEnchant(Enchantment.UNBREAKING, 10, true);
+        radiantHelmet.addEnchant(Enchantment.PROTECTION, 10, true);
+        radiantHelmet.addEnchant(Enchantment.BLAST_PROTECTION, 10, true);
+        radiantHelmet.addEnchant(Enchantment.RESPIRATION, 10, true);
+        radiantHelmet.addEnchant(Enchantment.DEPTH_STRIDER, 1, true);
         radiantHelmet.setUnbreakable(true);
         ExtraItemStack.RADIANT_HELMET_STACK.setItemMeta(radiantHelmet);
 
         ItemMeta radiantChestplate = ExtraItemStack.RADIANT_CHESTPLATE_STACK.getItemMeta();
-        radiantChestplate.addEnchant(Enchantment.DURABILITY, 10, true);
-        radiantChestplate.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        radiantChestplate.addEnchant(Enchantment.PROTECTION_FIRE, 10, true);
+        radiantChestplate.addEnchant(Enchantment.UNBREAKING, 10, true);
+        radiantChestplate.addEnchant(Enchantment.PROTECTION, 10, true);
+        radiantChestplate.addEnchant(Enchantment.FIRE_PROTECTION, 10, true);
         radiantChestplate.setUnbreakable(true);
         ExtraItemStack.RADIANT_CHESTPLATE_STACK.setItemMeta(radiantChestplate);
 
         ItemMeta radiantElytraChestplate = ExtraItemStack.RADIANT_CHESTPLATE_ELYTRA_STACK.getItemMeta();
-        radiantElytraChestplate.addEnchant(Enchantment.DURABILITY, 10, true);
-        radiantElytraChestplate.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 15, true);
-        radiantElytraChestplate.addEnchant(Enchantment.PROTECTION_FIRE, 10, true);
+        radiantElytraChestplate.addEnchant(Enchantment.UNBREAKING, 10, true);
+        radiantElytraChestplate.addEnchant(Enchantment.PROTECTION, 15, true);
+        radiantElytraChestplate.addEnchant(Enchantment.FIRE_PROTECTION, 10, true);
         radiantElytraChestplate.setUnbreakable(true);
         ExtraItemStack.RADIANT_CHESTPLATE_ELYTRA_STACK.setItemMeta(radiantElytraChestplate);
 
         ItemMeta radiantLeggings = ExtraItemStack.RADIANT_LEGGINGS_STACK.getItemMeta();
-        radiantLeggings.addEnchant(Enchantment.DURABILITY, 10, true);
-        radiantLeggings.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        radiantLeggings.addEnchant(Enchantment.PROTECTION_PROJECTILE, 10, true);
+        radiantLeggings.addEnchant(Enchantment.UNBREAKING, 10, true);
+        radiantLeggings.addEnchant(Enchantment.PROTECTION, 10, true);
+        radiantLeggings.addEnchant(Enchantment.PROJECTILE_PROTECTION, 10, true);
         radiantLeggings.setUnbreakable(true);
         ExtraItemStack.RADIANT_LEGGINGS_STACK.setItemMeta(radiantLeggings);
 
         ItemMeta radiantBoots = ExtraItemStack.RADIANT_BOOTS_STACK.getItemMeta();
-        radiantBoots.addEnchant(Enchantment.DURABILITY, 10, true);
-        radiantBoots.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        radiantBoots.addEnchant(Enchantment.PROTECTION_FALL, 10, true);
+        radiantBoots.addEnchant(Enchantment.UNBREAKING, 10, true);
+        radiantBoots.addEnchant(Enchantment.PROTECTION, 10, true);
+        radiantBoots.addEnchant(Enchantment.FEATHER_FALLING, 10, true);
         radiantBoots.addEnchant(Enchantment.DEPTH_STRIDER, 3, true);
         radiantBoots.setUnbreakable(true);
         ExtraItemStack.RADIANT_BOOTS_STACK.setItemMeta(radiantBoots);
 
         ItemMeta nightmareHelmet = ExtraItemStack.NIGHTMARE_HELMET_STACK.getItemMeta();
-        nightmareHelmet.addEnchant(Enchantment.DURABILITY, 10, true);
-        nightmareHelmet.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        nightmareHelmet.addEnchant(Enchantment.PROTECTION_EXPLOSIONS, 10, true);
-        nightmareHelmet.addEnchant(Enchantment.OXYGEN, 10, true);
-        nightmareHelmet.addEnchant(Enchantment.WATER_WORKER, 1, true);
+        nightmareHelmet.addEnchant(Enchantment.UNBREAKING, 10, true);
+        nightmareHelmet.addEnchant(Enchantment.PROTECTION, 10, true);
+        nightmareHelmet.addEnchant(Enchantment.BLAST_PROTECTION, 10, true);
+        nightmareHelmet.addEnchant(Enchantment.RESPIRATION, 10, true);
+        nightmareHelmet.addEnchant(Enchantment.DEPTH_STRIDER, 1, true);
         nightmareHelmet.setUnbreakable(true);
         ExtraItemStack.NIGHTMARE_HELMET_STACK.setItemMeta(nightmareHelmet);
 
         ItemMeta nightmareChestplate =
                 ExtraItemStack.NIGHTMARE_CHESTPLATE_STACK.getItemMeta();
-        nightmareChestplate.addEnchant(Enchantment.DURABILITY, 10, true);
-        nightmareChestplate.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        nightmareChestplate.addEnchant(Enchantment.PROTECTION_FIRE, 10, true);
+        nightmareChestplate.addEnchant(Enchantment.UNBREAKING, 10, true);
+        nightmareChestplate.addEnchant(Enchantment.PROTECTION, 10, true);
+        nightmareChestplate.addEnchant(Enchantment.FIRE_PROTECTION, 10, true);
         nightmareChestplate.setUnbreakable(true);
         ExtraItemStack.NIGHTMARE_CHESTPLATE_STACK.setItemMeta(nightmareChestplate);
 
         ItemMeta nightmareElytraChestplate = ExtraItemStack.NIGHTMARE_CHESTPLATE_ELYTRA_STACK.getItemMeta();
-        nightmareElytraChestplate.addEnchant(Enchantment.DURABILITY, 10, true);
-        nightmareElytraChestplate.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 15, true);
-        nightmareElytraChestplate.addEnchant(Enchantment.PROTECTION_FIRE, 10, true);
+        nightmareElytraChestplate.addEnchant(Enchantment.UNBREAKING, 10, true);
+        nightmareElytraChestplate.addEnchant(Enchantment.PROTECTION, 15, true);
+        nightmareElytraChestplate.addEnchant(Enchantment.FIRE_PROTECTION, 10, true);
         nightmareElytraChestplate.setUnbreakable(true);
         ExtraItemStack.NIGHTMARE_CHESTPLATE_ELYTRA_STACK.setItemMeta(nightmareElytraChestplate);
 
         ItemMeta nightmareLeggings = ExtraItemStack.NIGHTMARE_LEGGINGS_STACK.getItemMeta();
-        nightmareLeggings.addEnchant(Enchantment.DURABILITY, 10, true);
-        nightmareLeggings.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        nightmareLeggings.addEnchant(Enchantment.PROTECTION_PROJECTILE, 10, true);
+        nightmareLeggings.addEnchant(Enchantment.UNBREAKING, 10, true);
+        nightmareLeggings.addEnchant(Enchantment.PROTECTION, 10, true);
+        nightmareLeggings.addEnchant(Enchantment.PROJECTILE_PROTECTION, 10, true);
         nightmareLeggings.setUnbreakable(true);
         ExtraItemStack.NIGHTMARE_LEGGINGS_STACK.setItemMeta(nightmareLeggings);
 
         ItemMeta nightmareBoots = ExtraItemStack.NIGHTMARE_BOOTS_STACK.getItemMeta();
-        nightmareBoots.addEnchant(Enchantment.DURABILITY, 10, true);
-        nightmareBoots.addEnchant(Enchantment.PROTECTION_ENVIRONMENTAL, 10, true);
-        nightmareBoots.addEnchant(Enchantment.PROTECTION_FALL, 10, true);
+        nightmareBoots.addEnchant(Enchantment.UNBREAKING, 10, true);
+        nightmareBoots.addEnchant(Enchantment.PROTECTION, 10, true);
+        nightmareBoots.addEnchant(Enchantment.FEATHER_FALLING, 10, true);
         nightmareBoots.addEnchant(Enchantment.DEPTH_STRIDER, 3, true);
         nightmareBoots.setUnbreakable(true);
         ExtraItemStack.NIGHTMARE_BOOTS_STACK.setItemMeta(nightmareBoots);
