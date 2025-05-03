@@ -6,8 +6,8 @@
   <version>1.0.0</version>
   
   <properties>
-  	<maven.compiler.source>1.8</maven.compiler.source>
-  	<maven.compiler.target>1.8</maven.compiler.target>
+  	<maven.compiler.source>16</maven.compiler.source>
+  	<maven.compiler.target>16</maven.compiler.target>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
@@ -63,9 +63,9 @@
   		</exclusions>
   	</dependency>
   	<dependency>
-  		<groupId>com.github.TheBusyBiscuit</groupId>
+  		<groupId>com.github.SlimefunGuguProject</groupId>
   		<artifactId>Slimefun4</artifactId>
-  		<version>RC-21</version>
+  		<version>38953fe13a</version>
   		<scope>provided</scope>
   		<exclusions>
   			<exclusion>

@@ -7,17 +7,17 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.slimeyderp.newbeginnings.NewBeginnings;
 
 public class ElytraChestplate extends NonDisenchantableSlimefunItem {
 
     private final ItemStack replace;
 
-    public ElytraChestplate(Category category, SlimefunItemStack item, RecipeType recipeType,
+    public ElytraChestplate(ItemGroup category, SlimefunItemStack item, RecipeType recipeType,
                             ItemStack[] recipe, boolean hidden, ItemStack replace) {
         super(category, item, recipeType, recipe);
         this.replace = replace;
@@ -35,7 +35,7 @@ public class ElytraChestplate extends NonDisenchantableSlimefunItem {
         ItemStack item = player.getInventory().getItemInMainHand();
         if (player.isSneaking()) {
             Bukkit.getScheduler().runTaskLater(NewBeginnings.getInstance(),
-                () -> handleShiftClick(player, item), 2);
+                    () -> handleShiftClick(player, item), 2);
         }
     }
 
@@ -46,8 +46,10 @@ public class ElytraChestplate extends NonDisenchantableSlimefunItem {
             p.getInventory().setChestplate(null);
         }
 
-        if (replace.getType() == Material.ELYTRA) { p.sendMessage(ChatColor.YELLOW + "Elytra Mode Activated"); } else {
-            p.sendMessage(ChatColor.YELLOW + "Chestplate Mode Activated");
+        if (replace.getType() == Material.ELYTRA) {
+            p.sendMessage(ChatColor.YELLOW + "已启动鞘翅模式");
+        } else {
+            p.sendMessage(ChatColor.YELLOW + "已启动胸甲模式");
         }
         p.getInventory().setItemInMainHand(replace);
 

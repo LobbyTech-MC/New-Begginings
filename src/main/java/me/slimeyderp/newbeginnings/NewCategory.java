@@ -1,16 +1,18 @@
 package me.slimeyderp.newbeginnings;
 
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+
 public final class NewCategory {
 
-    public static final Category CUSTOM_CATEGORY = new Category(
-        new NamespacedKey(NewBeginnings.getInstance(), "new_beginnings"),
-        new CustomItem(Material.END_CRYSTAL, "New Beginnings")
+    public static final ItemGroup CUSTOM_CATEGORY = new ItemGroup(
+            new NamespacedKey(NewBeginnings.getInstance(), "new_beginnings"),
+            new CustomItemStack(Material.END_CRYSTAL, "新生")
     );
 
-    private NewCategory() {}
+    private NewCategory() {
+    }
 }

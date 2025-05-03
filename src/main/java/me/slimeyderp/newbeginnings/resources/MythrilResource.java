@@ -1,12 +1,13 @@
 package me.slimeyderp.newbeginnings.resources;
 
-import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
-import me.slimeyderp.newbeginnings.NewBeginnings;
-import me.slimeyderp.newbeginnings.materials.ExtraItemStack;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World.Environment;
 import org.bukkit.block.Biome;
 import org.bukkit.inventory.ItemStack;
+
+import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
+import me.slimeyderp.newbeginnings.NewBeginnings;
+import me.slimeyderp.newbeginnings.materials.ExtraItemStack;
 
 public class MythrilResource implements GEOResource {
 
@@ -30,7 +31,7 @@ public class MythrilResource implements GEOResource {
 
     @Override
     public String getName() {
-        return "Mythril Ore";
+        return "秘银矿";
     }
 
     @Override

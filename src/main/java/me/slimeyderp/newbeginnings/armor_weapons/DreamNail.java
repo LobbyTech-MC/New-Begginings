@@ -14,10 +14,10 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.slimeyderp.newbeginnings.NewBeginnings;
 import me.slimeyderp.newbeginnings.listeners.MainListener;
 
@@ -28,7 +28,7 @@ public class DreamNail extends NonDisenchantableSlimefunItem {
     private static HashMap<UUID, Integer> cooldownPlayer = new HashMap<>();
     private byte cooldownTimer;
 
-    public DreamNail(Category category, SlimefunItemStack item, RecipeType recipeType,
+    public DreamNail(ItemGroup category, SlimefunItemStack item, RecipeType recipeType,
                      ItemStack[] recipe) {
         super(category, item, recipeType, recipe);
     }
@@ -41,18 +41,18 @@ public class DreamNail extends NonDisenchantableSlimefunItem {
 
     private void onItemRightClick(PlayerRightClickEvent e) {
         if (playerUsing.contains(e.getPlayer().getUniqueId())) {
-            e.getPlayer().sendMessage(ChatColor.RED + "You need to wait " + cooldownTimer +
-                " seconds before using this ability again");
+            e.getPlayer().sendMessage(ChatColor.RED + "你还需等待 " + cooldownTimer +
+                    " 秒，才可再次发动技能");
         } else {
             playerUsing.add(e.getPlayer().getUniqueId());
             for (Entity entity : e.getPlayer().getNearbyEntities(5, 5, 5)) {
                 if (entity instanceof LivingEntity) {
                     ((LivingEntity) entity).addPotionEffect
-                        (new PotionEffect(PotionEffectType.BLINDNESS, 40, 1));
+                            (new PotionEffect(PotionEffectType.BLINDNESS, 40, 1));
                     ((LivingEntity) entity).addPotionEffect
-                        (new PotionEffect(PotionEffectType.WITHER, 60, 5));
+                            (new PotionEffect(PotionEffectType.WITHER, 60, 5));
                     if (entity instanceof Player) {
-                        entity.sendMessage(ChatColor.DARK_GRAY + "The Void passes through you");
+                        entity.sendMessage(ChatColor.DARK_GRAY + "虚无将你穿透");
                     }
                 }
             }
@@ -60,10 +60,10 @@ public class DreamNail extends NonDisenchantableSlimefunItem {
             MainListener.disableDamageForPlayer.add(e.getPlayer().getUniqueId());
             cooldownTimer = 5;
             Bukkit.getScheduler().runTaskLater(NewBeginnings.getInstance(),
-                () -> FinishDash(e.getPlayer()), 5);
+                    () -> FinishDash(e.getPlayer()), 5);
             cooldownPlayer.put(e.getPlayer().getUniqueId(),
-                Bukkit.getScheduler().runTaskTimer(NewBeginnings.getInstance(),
-                    () -> Cooldown(e.getPlayer()), 20, 20).getTaskId());
+                    Bukkit.getScheduler().runTaskTimer(NewBeginnings.getInstance(),
+                            () -> Cooldown(e.getPlayer()), 20, 20).getTaskId());
 
         }
     }

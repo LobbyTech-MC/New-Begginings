@@ -18,7 +18,7 @@ public class Nightmare {
         nightmare.getAttribute(Attribute.GENERIC_ATTACK_DAMAGE).setBaseValue(55);
         nightmare.getAttribute(Attribute.GENERIC_ARMOR).setBaseValue(5);
         nightmare.setHealth(2048);
-        nightmare.setCustomName(ChatColor.DARK_GRAY + "The Nightmare");
+        nightmare.setCustomName(ChatColor.DARK_GRAY + "梦魇");
         nightmare.setCustomNameVisible(true);
     }
 }
